@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"fabrikaprojesi\startup_stm32f407xx.o"
+"fabrikaprojesi\main.o"
+"fabrikaprojesi\stm32f4xx_it.o"
+"fabrikaprojesi\stm32f4xx_hal_msp.o"
+"fabrikaprojesi\stm32f4xx_hal_adc.o"
+"fabrikaprojesi\stm32f4xx_hal_adc_ex.o"
+"fabrikaprojesi\stm32f4xx_hal_tim.o"
+"fabrikaprojesi\stm32f4xx_hal_tim_ex.o"
+"fabrikaprojesi\stm32f4xx_hal_uart.o"
+"fabrikaprojesi\stm32f4xx_hal_rcc.o"
+"fabrikaprojesi\stm32f4xx_hal_rcc_ex.o"
+"fabrikaprojesi\stm32f4xx_hal_flash.o"
+"fabrikaprojesi\stm32f4xx_hal_flash_ex.o"
+"fabrikaprojesi\stm32f4xx_hal_flash_ramfunc.o"
+"fabrikaprojesi\stm32f4xx_hal_gpio.o"
+"fabrikaprojesi\stm32f4xx_hal_dma_ex.o"
+"fabrikaprojesi\stm32f4xx_hal_dma.o"
+"fabrikaprojesi\stm32f4xx_hal_pwr.o"
+"fabrikaprojesi\stm32f4xx_hal_pwr_ex.o"
+"fabrikaprojesi\stm32f4xx_hal_cortex.o"
+"fabrikaprojesi\stm32f4xx_hal.o"
+"fabrikaprojesi\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "FabrikaProjesi\FabrikaProjesi.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FabrikaProjesi.map" -o FabrikaProjesi\FabrikaProjesi.axf
